@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<script src="index.js"></script>
+    </head>
+    <body>
+        <form id="myForm">
+            <label for="myNumber">Enter a number:</label>
+            <input type="number" id="myNumber">
+            <button onclick="getNumber()">Get Number</button>
+        </form>
+        
+        <p id="result"></p>
+        
+        <script>
+            function getNumber() {
+                const inputElement = document.getElementById("myNumber");
+                const inputValue = parseFloat(inputElement.value); // Convert to a number
+                document.getElementById("result").textContent = `You entered: ${inputValue}`;
+            }
+        </script>  
+    </body>
+</html>
